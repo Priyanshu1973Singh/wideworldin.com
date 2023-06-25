@@ -4,8 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WorldWideIn.com</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <center><h1>Welcome to WorldWideIndia.com</h1></center>
+    <!-- JQuery CDN Link -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                $('h1').animate({
+                    color:'blue',
+                    fontSize:'5rem'
+                },5000)
+                .css('color','red')
+            })
+        </script>
 </body>
 </html>
