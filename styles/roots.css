@@ -1,0 +1,13 @@
+/* logo gnt  */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+/* logo gnt  */
+/* list  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+/* list  */
+:root{
+    --prmry:#222e50;
+    --scndry:#fccb06;
+    --trtry:#edf7f6;
+    --lgfnt: 'Cinzel', serif;
+    --lstfnt:'Montserrat Alternates', sans-serif;
+}

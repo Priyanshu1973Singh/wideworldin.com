@@ -1,26 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WorldWideIn.com</title>
+    <title>WideWorldIn.com</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/roots.css">
 </head>
+
 <body>
-    <center><h1>Welcome to WorldWideIndia.com</h1></center>
+    <!-- <center><h1>Welcome to WorldWideIndia.com</h1></center> -->
+    <!-- Navbar -->
+    <nav class="nv">
+        <center>
+            <div class="lg_bx">
+                <p class="lg_pr">WideWorldIndia.com</p>
+            </div>
+            <div class="nvlst_wrapper">
+                
+                <div class="nv_accnt_wrapper">
+                    <p id="nv_sign">Enter</p>
+                    <img id="nv_lgn_icon" src="https://img.icons8.com/wired/64/fccb06/circled.png" alt="circled" />
+                </div>
+                <ul class="nv_list">
+                    <li class="nv_ls"><a class="nv_links" href="#">Menu</a></li>
+                    <li class="nv_ls"><a class="nv_links" href="#">Recent</a></li>
+                    <li class="nv_ls"><a class="nv_links" href="#">About</a></li>
+                    <li class="nv_ls"><a class="nv_links" href="#">Services</a></li>
+                    <li class="nv_ls"><a class="nv_links" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </center>    </nav>
+
+        <section>
+            <header class="header">
+                <section class="left_header">
+                   
+                </section>
+                <section class="rigth_header">
+                    <div class="rght_slide">
+                        <p style="color: var(--prmry);text-align: center;font-size: 1.5rem;background-color: var(--scndry);font-family:var(--lstfnt) ;padding: .5rem 0;position: absolute;width: 100%;">Recently Available</p>
+                        <div class="slide_items"></div>
+                        <div class="slide_items"></div>
+                        <div class="slide_items"></div>
+                    </div>
+                </section>
+            </header>
+        </section>
+
+
+
+
+    <!-- Navbar -->
     <!-- JQuery CDN Link -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-        <script>
+        <script >
             $(document).ready(function(){
-                $('h1').animate({
-                    color:'blue',
-                    fontSize:'5rem'
-                },5000)
-                .css('color','red')
-            },function(){
-                alert('none')
+                
+                
+
+
+
+                $('.nvlst_wrapper').delay(500).slideUp('slow')
+                $('.nv').hover(function(){
+                    $('.nvlst_wrapper').slideDown('slow')
+                },function () { $('.nvlst_wrapper').slideUp('slow')  })
+                $('#nv_lgn_icon').css('transform','rotate(140deg)')
+
             })
+
         </script>
+   
 </body>
+
 </html>
